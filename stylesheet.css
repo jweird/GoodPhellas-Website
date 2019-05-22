@@ -1,24 +1,15 @@
 html,body{
-    background-color: black !important;
-    height: 100%;
-
-}
-
-.bg {
-  /* The image used */
-  background-image: url("background.jpg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url('background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+
+
 }
 
 .navbar{
-  background-color: black;
+  background: transparent;
   justify-content: center;
 
 }
@@ -35,7 +26,7 @@ html,body{
 }
 
 img{
-  padding: 10px;
+  margin: 25px;
 }
 
 #icons{
@@ -61,4 +52,27 @@ img{
   padding-top: 100px;
   padding-bottom: 50px;
   font-family: 'Oswald', sans-serif;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+img.art_image{
+  justify-content: center;
+  max-width: 80%;
+  height: auto;
+}
+
+img.artist_image:hover .text {
+  opacity: 1;
 }
