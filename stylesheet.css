@@ -26,10 +26,12 @@ html,body{
 text-align: center;
 font-size: 3vmax;
 color: white;
-padding-top: 0px;
+padding-top: 100px;
 padding-bottom: 25px;
 
 }
+
+
 
 .icons{
   justify-content: center ;
@@ -74,7 +76,7 @@ padding-bottom: 25px;
 
 .footer{
 
-  background-color: black;
+  background-color: transparent;
 
 }
 
@@ -97,6 +99,7 @@ padding-bottom: 25px;
 }
 
 .grid{
+
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 2fr));
 
