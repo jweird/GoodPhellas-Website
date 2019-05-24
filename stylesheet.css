@@ -9,14 +9,11 @@ html,body{
 }
 
 .navbar{
-  background: transparent;
+  background: rgb(0, 0, 0);
   justify-content: center;
+  justify-items: center;
+  padding: 0px;
 
-}
-
-.col{
-  padding: 25px;
-  justify-content: center;
 }
 
 #artist_name{
@@ -25,14 +22,19 @@ html,body{
   color: white;
 }
 
-img{
-  margin: 25px;
+#slogan{
+text-align: center;
+font-size: 3vmax;
+color: white;
+padding-top: 0px;
+padding-bottom: 25px;
+
 }
 
-#icons{
-  display: flex;
-  justify-content: center;
-  padding: 25px;
+.icons{
+  justify-content: center ;
+  padding: 5%;
+  margin: 1%;
 }
 
 .navbar-nav > li{
@@ -42,7 +44,8 @@ img{
 }
  
 .navbar .navbar-collapse {
-  font-size: 30px;
+  font-size: 20px;
+  padding: 0px;
 }
 
 #name{
@@ -54,25 +57,55 @@ img{
   font-family: 'Oswald', sans-serif;
 }
 
-.text {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
 
-img.art_image{
-  justify-content: center;
-  max-width: 80%;
+.art_image{
+  display: block;
+  width: 80%;
   height: auto;
+  justify-items: center;
+
 }
 
-img.artist_image:hover .text {
-  opacity: 1;
+.text{
+  color: white;
+  font-size: 2vmax;
+  font-family: 'Ramabhadra', sans-serif;
+}
+
+.footer{
+
+  background-color: black;
+
+}
+
+.foot-text{
+
+  padding-bottom: 25px;
+  text-align: center;
+  color: white;
+}
+
+.col{
+  padding: 15px;
+}
+
+.artist_box{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: 10%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 2fr));
+
+}
+
+@media only screen and (max-width: 600px){
+  .grid{
+    display: grid;
+    grid-template-columns:  repeat(1, minmax(250px, 2fr));
+    color: white;
+  }
 }
